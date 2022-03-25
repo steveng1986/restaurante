@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.proyecto-restaurant {
+    display: grid;
+    grid-template-columns: minmax(300px, 2fr) 3fr;
+    grid-auto-rows: 400px;
+}
+
+.proyecto-menu {
+    align-self: center;
+}
+
+.title-proyect{
+    font-size: 46px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.text-proyect {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+}
+
+.the-button {
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    background-color: #fb8c00;
+    font-weight: 700;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.the-button:hover {
+    color: #fff;
+    background-color: #D75413;
+}
+
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 600px){
+    .proyecto-restaurant {
+        grid-template-columns: minmax(300px, 500px);
+        justify-content: center;
+    }
+    .image {
+        display: none;
+    }
+    .dishes-container {
+        grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
+
+    }
+}
+
+.text-proyect {
+    align-self: center;
+}
+
+.dishes {
+    margin: 100px 0;
+}
+
+.dishes-title {
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+.dishes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-rows: repeat(2, minmax(150px, 1fr));
+    grid-gap: 50px;
+}
+
+.dishes-items {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.dishes-items--big {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.home-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 150px);
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.home-container-image {
+    background-color: papayawhip;
+    padding: 15px;
+    border-top-left-radius: 40px;
+}
+
+.home-container-image:hover{
+    transform: scale(1.1);
+}
+
+.home-grid-images {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
